@@ -12,6 +12,7 @@ namespace SiteNavigation.Controllers
         // GET: /Home/
         public ActionResult Index()
         {
+            string a = "";
             return View();
         }
 	}
