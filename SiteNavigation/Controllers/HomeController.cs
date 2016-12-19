@@ -14,5 +14,9 @@ namespace SiteNavigation.Controllers
         {
             return View();
         }
+        public ActionResult Test()
+        {
+            return null;
+        }
 	}
 }
