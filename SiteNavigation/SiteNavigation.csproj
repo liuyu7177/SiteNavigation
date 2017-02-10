@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,6 +83,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\html\kaola.html" />
+    <Content Include="Content\img\buygift.png" />
+    <Content Include="Content\img\hongjiu.jpg" />
+    <Content Include="Content\img\huazhuangbang.png" />
     <Content Include="Content\img\Main\125.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -101,6 +106,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KaoLaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -113,6 +119,7 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\KaoLa\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
