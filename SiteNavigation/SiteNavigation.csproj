@@ -87,6 +87,13 @@
     <Content Include="Content\img\buygift.png" />
     <Content Include="Content\img\hongjiu.jpg" />
     <Content Include="Content\img\huazhuangbang.png" />
+    <Content Include="Content\img\kaolaimg\makemoney.png" />
+    <Content Include="Content\img\kaolaimg\buygift.png" />
+    <Content Include="Content\img\kaolaimg\hongjiu.jpg" />
+    <Content Include="Content\img\kaolaimg\one.jpg" />
+    <Content Include="Content\img\kaolaimg\three.jpg" />
+    <Content Include="Content\img\kaolaimg\two.png" />
+    <Content Include="Content\img\kaolaimg\meiyanbang.jpg" />
     <Content Include="Content\img\Main\125.jpg" />
     <Content Include="Content\Shadowsocks\pac.txt" />
     <Content Include="favicon.ico" />
@@ -94,6 +101,7 @@
     <None Include="Properties\PublishProfiles\SiteNavigation.pubxml" />
     <None Include="Properties\PublishProfiles\SiteNavigationWeb.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="kaola.html" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
