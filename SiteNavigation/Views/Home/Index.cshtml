@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     Layout = null;
 }
 
@@ -7,81 +8,118 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>昨日</title>
+    <title>网易考拉海购购物交流-网易考拉店主-网易考拉海购真假-网易考拉海购怎么样-网易考拉合伙人</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body {
-            /*position: fixed;
-                   _position: absolute;
-                   top: 0;
-                   left: 0;
-                   height: 100%;
-                   width: 100%;
-                   min-width: 1000px;*/
-            z-index: -10;
-            background-position: center 0;
-            background-repeat: no-repeat;
-            background-size: cover;
-            -webkit-background-size: cover;
-            -o-background-size: cover;
-            /*zoom: 1;*/
-            background-image: url("/Content/img/Main/125.jpg");
+            margin: 0 auto;
         }
 
-       
-
-        .s-skin-container {
-            /*position: fixed;
-                   _position: absolute;
-                   top: 0;
-                   left: 0;
-                   height: 100%;
-                   width: 100%;
-                   min-width: 1000px;
-                   z-index: -10;
-                   background-position: center 0;
-                   background-repeat: no-repeat;
-                   background-size: cover;
-                   -webkit-background-size: cover;
-                   -o-background-size: cover;
-                   zoom: 1;*/
+        a, :visited, ins {
+            text-decoration: none;
         }
 
-        #footer {
-            /*position: absolute;*/
-            width: 100%;
-            /*height: 60px;*/
-            clear: both;
-            text-align: center;
-          
+        ul, menu, dir {
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
         }
-            #footer a {
-                text-decoration: none;
-                color: #fff;
+
+        #header ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header {
+            width: 1400px;
+            margin-top: 10px;
+        }
+
+            #header ul li {
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                padding-right: 40px;
+                font-size: 26px;
+                font-weight: 900;
             }
-        #big {
-            overflow: auto;
+
+                #header ul li a {
+                    color: black;
+                }
+
+                    #header ul li a:hover {
+                        text-decoration: none;
+                        color: #337ab7;
+                    }
+
+        div {
+            /*border: 1px solid red;*/
+        }
+        /*以下是对bootstrap中tooltip的默认属性进行重新设定*/
+        .tooltip-inner {
+            width: 150px;
+            color: #113f6c;
+            font-size: 1.2em;
+            padding: 4px;
+            background-color: #fff;
         }
 
-        #main {
-            height: 900px;
-            overflow: auto;
+        .tooltip.bottom .tooltip-arrow {
+            border-bottom-color: #fff;
         }
     </style>
 </head>
 <body>
-    <div id="big">
-        <div class="s-skin-container s-isindex-wrap">  </div>
-        <div>
-            第一个单页应用！ <br />
-            想知道未来，去昨日看看<br />
-            最容易失去的是昨日，最遥远的是未来<br />
-            最遥远的是昨日，最容易失去的是未来<br />
-            
-        </div>
-        <a href="http://www.zuoridaohang.com/Content/html/kaola.html">如何成为网易考拉商城店主</a>
-        <div id="footer">
-            <a href="http://www.miibeian.gov.cn/">粤ICP备16058286号</a>
+    <div>
+        <div class="container" id="header">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="@Html.ImageInclude("img/homeIndex/logo.jpg")" alt="网易考拉海购购物交流网" />
+                </div>
+                <div class="col-md-7">
+                    <ul>
+                        <li><a>首页</a></li>
+                        <li><a>最新消息</a></li>
+                        <li><a href="http://www.kaola.com">考拉海购官网</a></li>
+                        <li><a data-toggle="popover">考拉海购微信交流群</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="//cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(function () {
+                $('[data-toggle="popover"]').popover({
+                    html: true,
+                    title: "网易考拉海购微信交流群",
+                    placement: 'bottom',
+                    content: function () {
+                        return '<div class="hover-hovercard"><img src="@Html.ImageInclude("img/homeIndex/interflow.png")" alt="考拉海购微信交流群"></div>';
+                    }
+                }).on("mouseenter", function () {
+                    var _this = this;
+                    $(this).popover("show");
+                    $(this).siblings(".popover").on("mouseleave", function () {
+                        $(_this).popover('hide');
+                    });
+                }).on("mouseleave", function () {
+                    var _this = this;
+                    setTimeout(function () {
+                        if (!$(".popover:hover").length) {
+                            $(_this).popover("hide")
+                        }
+                    }, 100);
+                });
+            });
+        });
+    </script>
 </body>
 </html>

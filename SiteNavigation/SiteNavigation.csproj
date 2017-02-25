@@ -85,6 +85,8 @@
   <ItemGroup>
     <Content Include="Content\html\kaola.html" />
     <Content Include="Content\img\buygift.png" />
+    <Content Include="Content\img\homeIndex\logo.jpg" />
+    <Content Include="Content\img\homeIndex\interflow.png" />
     <Content Include="Content\img\hongjiu.jpg" />
     <Content Include="Content\img\huazhuangbang.png" />
     <Content Include="Content\img\kaolaimg\makemoney.png" />
@@ -97,6 +99,7 @@
     <Content Include="Content\img\Main\125.jpg" />
     <Content Include="Content\Shadowsocks\pac.txt" />
     <Content Include="favicon.ico" />
+    <Content Include="favicon1.ico" />
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\SiteNavigation.pubxml" />
     <None Include="Properties\PublishProfiles\SiteNavigationWeb.pubxml" />
@@ -111,7 +114,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -130,6 +133,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\KaoLa\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -140,6 +144,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiteNavigation.Framework\SiteNavigation.Framework.csproj">
+      <Project>{c3726c5d-daca-4ddb-8152-0b78454c94ea}</Project>
+      <Name>SiteNavigation.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
