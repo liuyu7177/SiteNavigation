@@ -83,10 +83,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\source\home.css" />
     <Content Include="Content\html\kaola.html" />
     <Content Include="Content\img\buygift.png" />
+    <Content Include="Content\img\homeIndex\12.jpg" />
+    <Content Include="Content\img\homeIndex\MicroMall.png" />
+    <Content Include="Content\img\homeIndex\16.jpg" />
+    <Content Include="Content\img\homeIndex\2.jpg" />
+    <Content Include="Content\img\homeIndex\26.jpg" />
+    <Content Include="Content\img\homeIndex\3.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\1.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\2.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\3.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\4.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\5.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\6.jpg" />
     <Content Include="Content\img\homeIndex\logo.jpg" />
     <Content Include="Content\img\homeIndex\interflow.png" />
+    <Content Include="Content\img\homeIndex\MicroMall.jpg" />
+    <Content Include="Content\img\homeIndex\wodefan.jpg" />
     <Content Include="Content\img\hongjiu.jpg" />
     <Content Include="Content\img\huazhuangbang.png" />
     <Content Include="Content\img\kaolaimg\makemoney.png" />
@@ -97,6 +112,7 @@
     <Content Include="Content\img\kaolaimg\two.png" />
     <Content Include="Content\img\kaolaimg\meiyanbang.jpg" />
     <Content Include="Content\img\Main\125.jpg" />
+    <Content Include="Content\js\source\home.js" />
     <Content Include="Content\Shadowsocks\pac.txt" />
     <Content Include="favicon.ico" />
     <Content Include="favicon1.ico" />
@@ -118,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Code\SiteNavigationObject.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KaoLaController.cs" />
     <Compile Include="Global.asax.cs">
@@ -134,6 +151,8 @@
     </Content>
     <Content Include="Views\KaoLa\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\KaoLa.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -143,6 +162,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\css\compression\" />
+    <Folder Include="Content\js\compression\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
