@@ -112,6 +112,7 @@
     <Content Include="Content\img\kaolaimg\two.png" />
     <Content Include="Content\img\kaolaimg\meiyanbang.jpg" />
     <Content Include="Content\img\Main\125.jpg" />
+    <Content Include="Content\img\new\1new.png" />
     <Content Include="Content\js\source\home.js" />
     <Content Include="Content\Shadowsocks\pac.txt" />
     <Content Include="favicon.ico" />

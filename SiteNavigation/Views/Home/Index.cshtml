@@ -8,19 +8,43 @@
             /*border: 1px solid red;*/
         }
 
-        #main .container .row {
+        #main .container {
+            margin: 0 auto;
+            padding: 0;
         }
 
         #main .left {
-            border-right: 1px solid #e9e9e9;
         }
+
+            #main .left img {
+                width: 300px;
+                height: 150px;
+            }
+
+            #main .left .img {
+                margin: 0 auto;
+                padding: 0;
+            }
 
         #main .right {
             border-left: 1px solid #e9e9e9;
         }
 
+            #main .right .container {
+                padding-left: 15px;
+            }
+
         #main .new {
             margin-top: 5px;
+        }
+
+        #main .blogArticle {
+        }
+        #main .blogArticle .article{
+            padding-left:20px;
+        }
+         #main .blogArticle .article .title{
+           font-weight:700;
         }
     </style>
 }
@@ -30,7 +54,20 @@
 }
 <div class="container">
     <div class="row">
-        <div class="col-md-9 left"></div>
+        <div class="col-md-9 left">
+            <div class="container">
+                <div class="row blogArticle">
+                    <div class="col-md-3 img">
+                        <img src="@Html.ImageInclude("img/new/1new.png")" />
+                    </div>
+                    <div class="col-md-9 article">
+                        <h3 class="title">网易考拉海购是正品吗?</h3>
+                        <span>fsdsfd</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
         <div class="col-md-3 right">
             <div class="container">
                 <div class="row">
