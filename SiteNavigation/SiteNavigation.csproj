@@ -83,7 +83,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\source\home.css" />
+    <Content Include="Content\html\kaola.html" />
+    <Content Include="Content\img\buygift.png" />
+    <Content Include="Content\img\homeIndex\12.jpg" />
+    <Content Include="Content\img\homeIndex\MicroMall.png" />
+    <Content Include="Content\img\homeIndex\16.jpg" />
+    <Content Include="Content\img\homeIndex\2.jpg" />
+    <Content Include="Content\img\homeIndex\26.jpg" />
+    <Content Include="Content\img\homeIndex\3.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\1.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\2.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\3.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\4.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\5.jpg" />
+    <Content Include="Content\img\homeIndex\listbox\6.jpg" />
+    <Content Include="Content\img\homeIndex\logo.jpg" />
+    <Content Include="Content\img\homeIndex\interflow.png" />
+    <Content Include="Content\img\homeIndex\MicroMall.jpg" />
+    <Content Include="Content\img\homeIndex\wodefan.jpg" />
+    <Content Include="Content\img\hongjiu.jpg" />
+    <Content Include="Content\img\huazhuangbang.png" />
+    <Content Include="Content\img\kaolaimg\makemoney.png" />
+    <Content Include="Content\img\kaolaimg\buygift.png" />
+    <Content Include="Content\img\kaolaimg\hongjiu.jpg" />
+    <Content Include="Content\img\kaolaimg\one.jpg" />
+    <Content Include="Content\img\kaolaimg\three.jpg" />
+    <Content Include="Content\img\kaolaimg\two.png" />
+    <Content Include="Content\img\kaolaimg\meiyanbang.jpg" />
     <Content Include="Content\img\Main\125.jpg" />
+    <Content Include="Content\img\new\1new.png" />
+    <Content Include="Content\js\source\home.js" />
     <Content Include="Content\Shadowsocks\pac.txt" />
     <Content Include="Content\考拉客\005C8rLzzy788rva4AK36&amp;690.jpg" />
     <Content Include="Content\考拉客\111.jpg" />
@@ -195,6 +225,7 @@
     <Content Include="Content\考拉客\美颜棒二维码.png" />
     <Content Include="Content\考拉客\考拉.jpg" />
     <Content Include="favicon.ico" />
+    <Content Include="favicon1.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\考拉客\一元购\沙狐一元购.psd" />
     <Content Include="Content\考拉客\一元购\网易考拉海购商城招商介绍 （12月31日）.pdf" />
@@ -239,6 +270,7 @@
     <None Include="Properties\PublishProfiles\SiteNavigation.pubxml" />
     <None Include="Properties\PublishProfiles\SiteNavigationWeb.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="kaola.html" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -248,11 +280,13 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Code\SiteNavigationObject.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KaoLaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -265,6 +299,10 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Views\KaoLa\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\KaoLa.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -274,7 +312,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\css\compression\" />
+    <Folder Include="Content\js\compression\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiteNavigation.Framework\SiteNavigation.Framework.csproj">
+      <Project>{c3726c5d-daca-4ddb-8152-0b78454c94ea}</Project>
+      <Name>SiteNavigation.Framework</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

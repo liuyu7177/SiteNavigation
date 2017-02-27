@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="Keywords" content="网易考拉海购真假、考拉店主、考拉店主合伙人、网易考拉店主入口、网易考拉海购怎么样" />
+    <meta name="Keywords" content="@ViewBag.Keywords" />
+    <meta name="Description" content="提供给在网易考拉海购购物的粉丝们交流的一个平台。同时也是考拉店主劲豪团队的官方加盟入口" />
+    <title>@ViewBag.Title-网易考拉店主-网易考拉海购真假-网易考拉海购怎么样-网易考拉合伙人-网易考拉店主入口</title>
+    <link rel="stylesheet" href="https:cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="@Html.CssSource("home.css")" re rel="stylesheet" />
+    @RenderSection("css", false)
+    @switch (SiteNavigationObject.StatisticalCode())
+    {
+        case 1:
+            <text>
+                <script>
+                    var _hmt = _hmt || [];
+                    (function () {
+                        var hm = document.createElement("script");
+                        hm.src = "https://hm.baidu.com/hm.js?0fd459c8e752824e930b53c2f5a012d3";
+                        var s = document.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(hm, s);
+                    })();
+                </script>
+            </text>
+            break;
+        case 2:
+            <text>
+                <script>
+                    var _hmt = _hmt || [];
+                    (function () {
+                        var hm = document.createElement("script");
+                        hm.src = "https://hm.baidu.com/hm.js?ca03dbcefcf3f5ca5f8d6ff17b515101";
+                        var s = document.getElementsByTagName("script")[0];
+                        s.parentNode.insertBefore(hm, s);
+                    })();
+                </script>
+            </text>
+            break;
+    }
+</head>
+<body>
+    <div>
+        <div class="container OverallWidth" id="header">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="@Html.ImageInclude("img/homeIndex/logo.jpg")" alt="网易考拉海购购物交流网" />
+                </div>
+                <div class="col-md-7">
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a>最新消息</a></li>
+                        <li><a data-toggle="popover">考拉海购微信交流群</a></li>
+                        <li><a data-toggle="GoWebsite">考拉海购官网</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item">
+                        <a href="http://www.kaola.com/activity/detail/11351.shtml" target="_blank">
+                            <img src="@Html.ImageInclude("img/homeIndex/listbox/4.jpg")" alt="...">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.kaola.com/activity/detail/23767.shtml" target="_blank">
+                            <img src="@Html.ImageInclude("img/homeIndex/listbox/3.jpg")" alt="...">
+                        </a>
+                    </div>
+                    <div class="item active">
+                        <a href="http://game.kaola.com" target="_blank">
+                            <img src="@Html.ImageInclude("img/homeIndex/listbox/1.jpg")" alt="...">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">上一张</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">下一张</span>
+                </a>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="main" id="main">
+            @RenderBody()
+        </div>
+        <div id="foot">
+            <p class="foot-sites">
+                <a href="http://ir.netease.com/phoenix.zhtml?c=122303&amp;p=irol-IRHome" rel="nofollow" target="_blank" title="About NetEase">About NetEase</a>
+                <a href="http://www.kaola.com/footer/contactus.shtml?zn=footer" rel="nofollow" target="_blank" title="联系方法">网易考拉海购联系方式</a>
+                <a data-toggle="MicroMall">网易考拉海购微商城</a>
+                <a data-toggle="Customer">考拉店主劲豪团队咨询客服</a>
+                <a href="http://www.kaola.com/" class="last" target="_blank" title="网易考拉海购">网易考拉海购PC端</a> <br>
+                <span class="foot-sm">申明：考拉购物交流网是面向在考拉购物粉丝的服务性网站,本站同网易及旗下所有子网站无关</span> <span class="foot-cprt">考拉购物交流网 版权所有©2017</span>
+                <span><a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备16058286号</a></span>
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="@Html.JsSource("home.js")"></script>
+    @RenderSection("js", false)
+</body>
+</html>
