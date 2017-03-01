@@ -12,7 +12,7 @@ namespace SiteNavigation.Framework.Extension
         private static string baseDic = ConfigurationManager.AppSettings["baseDic"]?? "/Content/";
         private static string isCompressionStr = ConfigurationManager.AppSettings["baseDic"] ?? "true";
         private static bool isCompression = false;
-        private static string _version = "20160101";
+        private static string _version = "20160102";
         static HtmlExtension()
         {
             if(isCompressionStr == "true")

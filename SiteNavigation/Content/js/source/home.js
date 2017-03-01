@@ -4,7 +4,7 @@
         title: "网易考拉海购微信交流群",
         placement: 'bottom',
         content: function () {
-            return '<div class="hover-hovercard"><p>QQ群：189781646</p><p>微信群扫下面二维码：</p><img src="/Content/img/homeIndex/interflow.png" alt="考拉海购微信交流群"></div>';
+            return '<div class="hover-hovercard"><p>QQ群：189781646</p><p>进微信群先加客服：</p><img style="width:240px;"  src="/Content/img/homeIndex/groupOwner.jpg" alt="考拉海购微信交流群"></div>';
         }
     }).on("mouseenter", function () {
         var _this = this;
@@ -71,7 +71,7 @@
         title: "微信--考拉店主劲豪团队咨询客服",
         placement: 'top',
         content: function () {
-            return '<div class="hover-hovercard"><img style="width:240px;" src="/Content/img/homeIndex/wodefan.jpg" alt="考拉店主劲豪团队咨询客服"></div>';
+            return '<div class="hover-hovercard"><img style="width:240px;" src="/Content/img/homeIndex/groupOwner.jpg" alt="考拉店主劲豪团队咨询客服"></div>';
         }
     }).on("mouseenter", function () {
         var _this = this;

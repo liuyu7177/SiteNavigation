@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteNavigation", "SiteNavig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteNavigation.Framework", "SiteNavigation.Framework\SiteNavigation.Framework.csproj", "{C3726C5D-DACA-4DDB-8152-0B78454C94EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteNavigation.admin", "SiteNavigation.admin\SiteNavigation.admin.csproj", "{0F1A9E0D-5A3B-41B0-A425-41E7A990A60D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C3726C5D-DACA-4DDB-8152-0B78454C94EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3726C5D-DACA-4DDB-8152-0B78454C94EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3726C5D-DACA-4DDB-8152-0B78454C94EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F1A9E0D-5A3B-41B0-A425-41E7A990A60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F1A9E0D-5A3B-41B0-A425-41E7A990A60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F1A9E0D-5A3B-41B0-A425-41E7A990A60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F1A9E0D-5A3B-41B0-A425-41E7A990A60D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
