@@ -87,6 +87,7 @@
     <Content Include="Content\html\kaola.html" />
     <Content Include="Content\img\buygift.png" />
     <Content Include="Content\img\homeIndex\12.jpg" />
+    <Content Include="Content\img\homeIndex\gift.png" />
     <Content Include="Content\img\homeIndex\MicroMall.png" />
     <Content Include="Content\img\homeIndex\16.jpg" />
     <Content Include="Content\img\homeIndex\2.jpg" />
