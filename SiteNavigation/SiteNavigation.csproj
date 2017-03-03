@@ -268,6 +268,7 @@
     <Content Include="Content\考拉客\推广素材\宣传照.psd" />
     <Content Include="Content\考拉客\推广素材\网易考拉海购商城招商手册.pdf" />
     <Content Include="Content\考拉客\贴吧文案\文案.xlsx" />
+    <Content Include="Content\Theme-DeepBlueAdmin.zip" />
     <None Include="Properties\PublishProfiles\SiteNavigation.pubxml" />
     <None Include="Properties\PublishProfiles\SiteNavigationWeb.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
