@@ -57,44 +57,57 @@
                 </div>
             </div>
         </div>
-        <div class="banner">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item">
-                        <a href="http://www.kaola.com/activity/detail/11351.shtml" target="_blank">
-                            <img src="@Html.ImageInclude("img/homeIndex/listbox/4.jpg")" alt="...">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="http://www.kaola.com/activity/detail/23767.shtml" target="_blank">
-                            <img src="@Html.ImageInclude("img/homeIndex/listbox/3.jpg")" alt="...">
-                        </a>
-                    </div>
-                    <div class="item active">
-                        <a href="http://game.kaola.com" target="_blank">
-                            <img src="@Html.ImageInclude("img/homeIndex/listbox/1.jpg")" alt="...">
-                        </a>
-                    </div>
+        <div class="banner container">
+            <div class="row blogArticle">
+                <div class="col-md-10">
+                    <h3 class="title">网易考拉海购介绍</h3>
+                    @*<div id="youkuplayer" style="height:550px; width:930px;"></div>*@
+                    <iframe height=550 width=930 src='http://player.youku.com/embed/XMjUwMjIyODk3Mg==' frameborder=0 'allowfullscreen'></iframe>
                 </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">上一张</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">下一张</span>
-                </a>
+                <div class="col-md-2">
+                    <h3>考拉店主加盟</h3>
+                    <span>劲豪团队</span>
+                    <img />
+                    <img height=200 width=200 src="@Html.ImageInclude("img/homeIndex/gift.png")" />
+                </div>
             </div>
+            @*<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item">
+                            <a href="http://www.kaola.com/activity/detail/11351.shtml" target="_blank">
+                                <img src="@Html.ImageInclude("img/homeIndex/listbox/4.jpg")" alt="...">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="http://www.kaola.com/activity/detail/23767.shtml" target="_blank">
+                                <img src="@Html.ImageInclude("img/homeIndex/listbox/3.jpg")" alt="...">
+                            </a>
+                        </div>
+                        <div class="item active">
+                            <a href="http://game.kaola.com" target="_blank">
+                                <img src="@Html.ImageInclude("img/homeIndex/listbox/1.jpg")" alt="...">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">上一张</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">下一张</span>
+                    </a>
+                </div>*@
         </div>
         <div class="clear"></div>
         <div class="main" id="main">
@@ -116,5 +129,16 @@
     <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="@Html.JsSource("home.js")"></script>
     @RenderSection("js", false)
+    @*<script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <script type="text/javascript">
+        player = new YKU.Player('youkuplayer', {
+            styleid: '0',
+            client_id: 'd86d790eb5e5f535',
+            vid: 'XMjUwMjIyODk3Mg',
+            newPlayer: true,
+            autoplay: false,
+            show_related: false
+        });
+    </script>*@
 </body>
 </html>
